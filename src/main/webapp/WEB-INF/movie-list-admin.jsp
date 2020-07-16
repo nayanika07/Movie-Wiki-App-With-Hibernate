@@ -4,12 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="ISO-8859-1">
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
       <link type="text/css" rel="stylesheet" href="./resources/style.css">
+
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -21,6 +27,7 @@
 <!--  -->
 </head>
 <body>
+
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -43,11 +50,10 @@
                 <a class="mdl-navigation__link" href="/customermovielist">Customer</a>
             </nav>
         </div>
-        <br>
-        <br>
-  
-	<center><h1><b>Movie List Admin</b></h1></center>
-	<br>
+       <br>
+       <br>
+  <center><b><h1 style="font-family: Paprika">Movie List - Admin&nbsp; <span class="glyphicon glyphicon-user"></span></h1></b></center>
+	
 	 <!--    
 <div class="searchbox">
 
@@ -81,10 +87,10 @@
 		     </c:otherwise>
 		     </c:choose>
 			<div class="card col-sm-3  mt-5" class="cardmargins" style="width: 15rem;background-color: #ccccff;">
-				<img class="card-img-top" src=${mov.link } height="265" width="345" alt="image">
+				<img class="card-img-top" src=${mov.link } height="265" width="345" style= "border:5px solid  #668cff" alt="image">
 				<div class="card-body" style="padding:10px">
 					<div class="card-title">
-						<h4 ><span id="title"><b>${mov.title}</b></span></h4>
+						<h4 style="font-family: Paprika" ><span id="title"><b>${mov.title}</b></span></h4>
 						<span id="boxOffice" class="float-right">${mov.boxoffice }&nbsp;CR</span>
 					</div>
 					<div>

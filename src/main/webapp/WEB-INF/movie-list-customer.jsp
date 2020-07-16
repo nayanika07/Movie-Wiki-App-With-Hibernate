@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <title>Movie Cruiser - Customer</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -35,7 +36,7 @@
                     <a class="mdl-navigation__link" href="">Movie List</a>&nbsp;|
                 </nav>
                  <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="/myfavorites">My Favorites</a>
+                    <a class="mdl-navigation__link" href="/myfavorites">My Favorites&nbsp;<span class="glyphicon glyphicon-star"></a>
                 </nav>
             </div>
         </header>
@@ -48,7 +49,7 @@
         </div>
         <br><br>
   
-	<center><h1>Movie List Customer</h1></center>
+	<center><h1 style="font-family: Paprika">Movie List Customer</h1></center>
 	<br>
 	 <!--    
 <div class="searchbox">
@@ -75,10 +76,10 @@
 		     </c:otherwise>
 		     </c:choose>
 			<div class="card col-sm-3 mt-5" class="cardmargins" style="width: 15rem;background-color:  #ccccff;">
-				<img class="card-img-top" src=${mov.link } height="265" width="345" alt="image">
+				<img class="card-img-top" src=${mov.link } height="265" width="345" style= "border:5px solid  #668cff" alt="image">
 				<div class="card-body">
 					<div class="card-title">
-						<h4 ><span id="title"><b>${mov.title}</b></span></h4>
+						<h4 style="font-family: Paprika" ><span id="title"><b>${mov.title}</b></span></h4>
 						<span id="boxOffice" class="float-right">${mov.boxoffice }&nbsp;CR</span>
 					</div>
 					<div>

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link type="text/css" rel="stylesheet" href="./resources/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -46,11 +47,12 @@
 
 	<div class="container">
 	 <div class="addnewbox">
-	<h1 class="text-primary">Edit Movie Details</h1>
+	<h1 class="text-primary" style="font-family: Paprika">Edit Movie Details</h1>
 		<f:form method="post" action="updateMovie" class="col-6" modelAttribute="movie">
 		
-			<div class="unediatble">
+			
 			<div class="form-group">
+			<div class="uneditable">
 				<f:label path="id">Movie Id</f:label>
 				<f:input path="id" class="form-control"/>
 				<f:errors  path="id" cssStyle="color:red"></f:errors>
@@ -116,7 +118,7 @@
 				<f:radiobutton path="hasteaser" value="No" label="No"/>
 			</div>
 		
-	<input type="submit" value="Update" class="btn btn-info"/>
+	<input type="submit" value="Update" class="btn btn-primary btn-lg"/>
 </f:form>
 	</div>
 	<br>

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link type="text/css" rel="stylesheet" href="./resources/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -31,7 +32,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Movie List</a>
+                    <a class="mdl-navigation__link" href="/index">Movie List</a>
                 </nav>
             </div>
         </header>
@@ -46,7 +47,7 @@
 
 	<div class="container">
 	 <div class="addnewbox">
-	<h1 class="text-primary">Add New Movie</h1>
+	<h1 class="text-primary" style="font-family: Paprika">Add New Movie</h1>
 		<f:form method="post" action="addMovie" class="col-6" modelAttribute="movie">
 		
 			<div class="form-group">
@@ -114,7 +115,7 @@
 				<f:radiobutton path="hasteaser" value="No" label="No"/>
 			</div>
 		
-		<input type="submit" value="Add" class="btn btn-success"/>
+		<input type="submit" value="Add" class="btn btn-success btn-lg"/>
 		</f:form>
 	</div>
 	<br>

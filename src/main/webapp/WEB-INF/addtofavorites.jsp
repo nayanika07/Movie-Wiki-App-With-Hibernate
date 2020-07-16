@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link type="text/css" rel="stylesheet" href="./resources/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -31,7 +32,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Movie List</a>
+                    <a class="mdl-navigation__link" href="/customermovielist">Movie List</a>
                 </nav>
             </div>
         </header>
@@ -44,9 +45,9 @@
         </div>
         <br><br>
 
-	<div class="container"> 
+<div class="container"> 
 <div class="editbox">
-	<h1 class="text-primary"> ADD TO FAVORITE LIST - View & Confirm</h1>
+	<h1 class="text-primary" style="font-family: Paprika"> Add To Favorite List - View & Confirm</h1>
 		<f:form method="post" action="updateMovieInFavoriteList" class="col-6" modelAttribute="movie">
 			
 			
@@ -127,22 +128,24 @@
 			  
 			   <div class = "addincartfont">
 				<div class="form-group control-radio">
-				<f:label path="fav"><h3>Add To Favorite List &emsp;</h3></f:label>
+				<f:label path="fav"><h3>Add To Favorite List? &emsp;</h3></f:label>
 				<f:radiobutton path="fav" value="Yes" label="Yes"/>&emsp;
 				<f:radiobutton path="fav" value="No" label="No"/>
 			</div>
 			</div>
-		<br>
 		
-		<input type="submit" value="ADD TO CART" class="btn btn-info" href="/myfavorites"/>
+		
+		<input type="submit" value="ADD TO MY FAVORITES" class="btn btn-primary btn-lg" href="/myfavorites"/>
 		</f:form>
 	</div>
 	<br>
-	
-<footer class="mdl-mini-footer ">
+	<br>
+	</div>
+	<footer class="mdl-mini-footer ">
             <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">Copyright &copy; Nayanika - 2019</div>
+                <div class="mdl-logo">Copyright &copy; 2019 - Nayanika</div>
             </div>
         </footer>
+
 </body>
 </html>

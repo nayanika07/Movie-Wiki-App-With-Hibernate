@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link type="text/css" rel="stylesheet" href="./resources/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -19,6 +20,7 @@
 <title>Movie Cruiser - Favorites</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--  -->
+
 </head>
 <body>
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -35,7 +37,7 @@
                     <a class="mdl-navigation__link" href="/customermovielist">Movie List</a>&nbsp;|
                 </nav>
                  <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="/myfavorites">My Favorites</a>
+                    <a class="mdl-navigation__link" href="/myfavorites">My Favorites&nbsp;<span class="glyphicon glyphicon-star"></a>
                 </nav>
             </div>
         </header>
@@ -48,7 +50,7 @@
         </div>
         <br><br>
   
-	<center><h1>My Favorites <span class="glyphicon glyphicon-star"></span></h1></center>
+	<center><h1 style="font-family: Paprika">My Favorites <span class="glyphicon glyphicon-star"></span></h1></center>
 	<br>
 	<br>
 	<form action="add">
@@ -65,9 +67,7 @@
  </div>
 
  -->
- <br>
 
-	<br>
 		<!-- cards -->
 		<div class="container">
 		
@@ -81,15 +81,15 @@
 		      <c:set var="avail" value= "InActive" />
 		     </c:otherwise>
 		     </c:choose>
-			<div class="card col-sm-3" class="cardmargins" style="width: 15rem;background-color:  #ccccff;">
-				<img class="card-img-top" src=${mov.link } height="250" width="340" alt="image">
+			<div class="card col-sm-3 mt-5" class="cardmargins" style="width: 15rem;background-color:  #ccccff;">
+				<img class="card-img-top" src=${mov.link } height="265" width="345" style= "border:5px solid  #668cff" alt="image">
 				<div class="card-body">
 					<div class="card-title">
-						<h4 ><span id="title"><b>${mov.title}</b></span></h4>
+						<h4 style="font-family: Paprika" ><span id="title"><b>${mov.title}</b></span></h4>
 						<span id="boxOffice" class="float-right">${mov.boxoffice }&nbsp;CR</span>
 					</div>
 					<div>
-						<span id="genre" class="text-dark"><span class="badge badge-primary">${mov.active }</span ><br><b>${mov.genre }</b></span>
+						<span id="genre" class="text-dark"><span class="badge badge-primary">${avail }</span ><br><b>${mov.genre }</b></span>
 					</div>
 					<div class="bottom-wrap">
 							<span class="launch badge badge-success"><i class="fa fa-clock-o"></i>Release Date</span>
