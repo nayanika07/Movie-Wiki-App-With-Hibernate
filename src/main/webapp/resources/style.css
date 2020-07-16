@@ -1,0 +1,182 @@
+/* Add styles for truYum application here */
+.body,html{
+	display: grid;
+	grid-gap: 10px;
+}
+.mymargins{
+	width: 100%;
+}
+.mdl-layout__header-row {
+    background: rgb(48, 84, 150);
+}
+
+.mdl-layout__drawer-button {
+    background-color: rgb(48,84,150) !important;
+}
+
+.mdl-mini-footer {
+    background-color: rgb(141, 141, 141) !important;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    margin-left: 25px;
+}
+.uneditable{
+	    pointer-events: none;
+	    font-color: red;
+}
+.addincartfont{
+	font-size: 20px;
+	font-color: red;
+}
+
+table {
+    margin: 0px auto;
+}
+
+table caption {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.cart-empty {
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.notif {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+
+#admin-table td:nth-child(1) {
+    text-align: left;
+}
+
+#admin-table td:nth-child(3) {
+    text-align: center;
+}
+
+#admin-table td:nth-child(4) {
+    text-align: center;
+}
+
+#admin-table td:nth-child(5) {
+    text-align: center;
+}
+
+#admin-table td:nth-child(6) {
+    text-align: center;
+}
+
+#admin-table td:nth-child(7) {
+    text-align: center;
+}
+
+#customer-table td:nth-child(1) {
+    text-align: left;
+}
+
+#customer-table td:nth-child(2) {
+    text-align: center;
+}
+
+#customer-table td:nth-child(4) {
+    text-align: left;
+}
+
+#customer-table td:nth-child(5) {
+    text-align: center;
+}
+
+#cart-table td:nth-child(1) {
+    text-align: left;
+}
+
+#cart-table td:nth-child(2) {
+    text-align: left;
+}
+
+#cart-table tr:last-child {
+    font-weight: bold;
+}
+
+/*searchbutton*/
+form.searchform input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.searchform button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+.searchbox{
+	 box-sizing: border-box;
+	 margin-left: 8.5%;
+	 margin-right: 70%;
+}
+
+/*movie-list-admin*/
+.fav{
+	float:right;
+	}
+.fav:hover {
+	color: red;
+	}
+.row{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	}			
+* {
+  box-sizing: border-box;
+}
+div#form-box {
+  margin-top: -250px;
+  
+  text-align: center;
+}
+div#input-group {
+  width: 80%;
+  
+  margin: 0 auto 20px;
+  
+  position: relative;
+
+  background-color: #fff;
+  
+  border: none;
+  border-radius: 5px;
+}
+.cardmargins{
+	padding: 5px;
+	
+}
+.addmoviebutton{
+	padding: 15px;
+	margin-left: 8%;
+	margin-right: 9%;
+}
+
+		
