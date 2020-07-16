@@ -52,7 +52,7 @@
         </div>
        <br>
        <br>
-  <center><b><h1 style="font-family: Paprika">Movie List - Admin&nbsp; <span class="glyphicon glyphicon-user"></span></h1></b></center>
+  <center><b><h1 style="font-family: Paprika"><b>Movie List - Admin</b>&nbsp; <span class="glyphicon glyphicon-user"></span></h1></b></center>
 	
 	 <!--    
 <div class="searchbox">

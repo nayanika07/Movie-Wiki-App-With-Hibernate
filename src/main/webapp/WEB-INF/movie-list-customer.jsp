@@ -49,7 +49,7 @@
         </div>
         <br><br>
   
-	<center><h1 style="font-family: Paprika">Movie List Customer</h1></center>
+	<center><h1 style="font-family: Paprika"><b>Movie List Customer</b></h1></center>
 	<br>
 	 <!--    
 <div class="searchbox">

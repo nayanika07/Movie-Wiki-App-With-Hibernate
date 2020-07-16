@@ -50,7 +50,7 @@
         </div>
         <br><br>
   
-	<center><h1 style="font-family: Paprika">My Favorites <span class="glyphicon glyphicon-star"></span></h1></center>
+	<center><h1 style="font-family: Paprika"><b>My Favorites</b> <span class="glyphicon glyphicon-star"></span></h1></center>
 	<br>
 	<br>
 	<form action="add">
@@ -72,7 +72,7 @@
 		<div class="container">
 		
 		<div class="row">		
-		<c:forEach items="${movies}" var="mov">
+		<c:forEach items="${movies}" var="mov" varStatus="loopCounter">
 		   <c:choose>
 		     <c:when test="${mov.active== true}">
 		        <c:set var="avail" value= "Active" />
@@ -82,7 +82,7 @@
 		     </c:otherwise>
 		     </c:choose>
 			<div class="card col-sm-3 mt-5" class="cardmargins" style="width: 15rem;background-color:  #ccccff;">
-				<img class="card-img-top" src=${mov.link } height="265" width="345" style= "border:5px solid  #668cff" alt="image">
+				<img class="card-img-top" src=${mov.link } height="265" width="370" style= "border:5px solid  #668cff" alt="image">
 				<div class="card-body">
 					<div class="card-title">
 						<h4 style="font-family: Paprika" ><span id="title"><b>${mov.title}</b></span></h4>
@@ -93,7 +93,7 @@
 					</div>
 					<div class="bottom-wrap">
 							<span class="launch badge badge-success"><i class="fa fa-clock-o"></i>Release Date</span>
-						<a href="/delete?id=${mov.id }" onclick="return confirm('Do you wish to delete this movie?')" class="btn btn-danger float-right" style="color: white;">Delete<i class="fa fa-trash"></i> </a>
+						<a href="/deletefromfavorites?id=${mov.id }" onclick="return confirm('Do you wish to delete this movie?')" class="btn btn-danger float-right" style="color: white;">Delete<i class="fa fa-trash"></i> </a>
                     </div>
 					<div>
 						<span  id="dateofLaunch" class="text-dark"><b>${mov.dateofrelease }</b></span>
@@ -102,13 +102,17 @@
 			</div>
 			&emsp; &emsp;
 			<br>
-
+			<c:set var = "totalitems" scope = "session" value = "${loopCounter.count}"/>
 		</c:forEach>			
 	</div>	
+	<br>
+	<br>
+	  <hr class="my-4">
+	 <h4 style="font-family: Paprika"><b><c:out value="Total number of movies in my favorite list: ${totalitems}"/></b></h4>
 		</div>
 		<!--  -->
-		<br>
-		<br>
+		
+		
 		<br>
 	<footer class="mdl-mini-footer ">
             <div class="mdl-mini-footer__left-section">
