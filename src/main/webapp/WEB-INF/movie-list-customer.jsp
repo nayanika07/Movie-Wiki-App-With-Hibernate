@@ -51,16 +51,35 @@
   
 	<center><h1 style="font-family: Paprika"><b>Movie List Customer</b></h1></center>
 	<br>
-	 <!--    
-<div class="searchbox">
+    <hr class="my-4">
+	   
+    <div class="searchbox">
 
 <form class="searchform" action="">
-  <input type="text" placeholder="Search.." name="getsearch">
-  <button type="submit" href="searchresults?id=${menu_item.name }"><i class="fa fa-search"></i></button>
+  <input type="text" placeholder="Search your movie" name="getsearch">
+  
+  <button type="submit"> <i class="fa fa-search"></i></button>
+  
+  <c:forEach items="${movies}" var="mov">
+  <c:choose>
+		     <c:when test="${mov.active== true}">
+		        <c:set var="avail" value= "Active" />
+		     </c:when>
+		     <c:otherwise>
+		      <c:set var="avail" value= "InActive" />
+		     </c:otherwise>
+		     </c:choose>
+     <c:set var="searchitem" value="${param.getsearch }"/>
+          <c:if test="${searchitem == mov.title }">
+          
+         <h5>  <c:out value = "Item found!  Movie ID: ${mov.id } | Title: ${mov.title } | Genre: ${mov.genre } | Status: ${avail }"/></h5> 
+          </c:if>
+          
+  </c:forEach>
+      
 </form>
  </div>
-
- -->
+   <hr class="my-4">
  
 		<!-- cards -->
 		<div class="container">
