@@ -25,7 +25,7 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Movie Cruiser</span>
+                <span class="mdl-layout-title">Movie Wiki</span>
                 <!-- Icon -->
                 <img class="mdl-layout-icon logo" src="https://i.ibb.co/V2cnc3N/pinklogo.png"></img>
                 <!-- Add spacer, to align navigation to the right -->

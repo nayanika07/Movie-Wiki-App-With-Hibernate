@@ -1,4 +1,4 @@
-package com.cts.demo.moviecruiser.service;
+package com.nka.demo.moviewiki.service;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Service;
 
-import com.cts.demo.moviecruiser.dao.MovieRepository;
-import com.cts.demo.moviecruiser.model.Movie;
+import com.nka.demo.moviewiki.dao.MovieRepository;
+import com.nka.demo.moviewiki.model.Movie;
 @Service
-public class MovieCruiserServiceImpl implements MovieCruiserService {
+public class MovieWikiServiceImpl implements MovieWikiService {
 
 	@Autowired
 	MovieRepository repository;

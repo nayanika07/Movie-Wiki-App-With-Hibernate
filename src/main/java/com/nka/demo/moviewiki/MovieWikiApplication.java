@@ -1,13 +1,13 @@
-package com.cts.demo.moviecruiser;
+package com.nka.demo.moviewiki;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovieCruiserApplication {
+public class MovieWikiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MovieCruiserApplication.class, args);
+		SpringApplication.run(MovieWikiApplication.class, args);
 	}
 
 }

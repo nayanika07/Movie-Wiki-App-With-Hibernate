@@ -1,4 +1,4 @@
-package com.cts.demo.moviecruiser.controller;
+package com.nka.demo.moviewiki.controller;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.cts.demo.moviecruiser.model.Movie;
-import com.cts.demo.moviecruiser.service.MovieCruiserService;
+import com.nka.demo.moviewiki.model.Movie;
+import com.nka.demo.moviewiki.service.MovieWikiService;
 
 
 
 @Controller
-public class MovieCruiserController {
+public class MovieWikiController {
 
 	@Autowired
-	MovieCruiserService service;
+	MovieWikiService service;
 	@RequestMapping("/index")
 	public ModelAndView showIndex() {
 		ModelAndView mv=new ModelAndView("movie-list-admin");

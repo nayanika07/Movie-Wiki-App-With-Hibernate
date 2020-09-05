@@ -1,9 +1,9 @@
-package com.cts.demo.moviecruiser.dao;
+package com.nka.demo.moviewiki.dao;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.cts.demo.moviecruiser.model.Movie;
+import com.nka.demo.moviewiki.model.Movie;
 
 public interface MovieRepository extends JpaRepository<Movie, Integer> {
  

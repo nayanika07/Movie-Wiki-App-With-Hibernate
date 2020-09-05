@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<title>Movie Cruiser - Customer</title>
+<title>Movie Wiki - Customer</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--  -->
 </head>
@@ -26,7 +26,7 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Movie Cruiser</span>
+                <span class="mdl-layout-title">Movie Wiki</span>
                 <!-- Icon -->
                 <img class="mdl-layout-icon logo" src="https://i.ibb.co/V2cnc3N/pinklogo.png"></img>
                 <!-- Add spacer, to align navigation to the right -->
@@ -49,7 +49,7 @@
         </div>
         <br><br>
   
-	<center><h1 style="font-family: Paprika"><b>Movie List Customer</b></h1></center>
+	<center><h1 style="font-family: Paprika"><b>Movie List Customer - Displaying Active Movies</b></h1></center>
 	<br>
     <hr class="my-4">
 	   

@@ -1,4 +1,4 @@
-package com.cts.demo.moviecruiser.model;
+package com.nka.demo.moviewiki.model;
 
 	import java.time.LocalDate;
 

@@ -1,10 +1,10 @@
-package com.cts.demo.moviecruiser.service;
+package com.nka.demo.moviewiki.service;
 
 import java.util.List;
 
-import com.cts.demo.moviecruiser.model.Movie;
+import com.nka.demo.moviewiki.model.Movie;
 
-public interface MovieCruiserService {
+public interface MovieWikiService {
 	List<Movie> getMovies();
 	List<Movie> getMovieListCustomer();
 	void addMovie(Movie mov);
